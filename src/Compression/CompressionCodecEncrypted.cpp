@@ -9,6 +9,8 @@
 #include <Common/logger_useful.h>
 
 // This depends on BoringSSL-specific API, notably <openssl/aead.h>.
+#undef USE_SSL
+#define USE_SSL 0
 #if USE_SSL
 #include <openssl/digest.h>
 #include <openssl/err.h>
