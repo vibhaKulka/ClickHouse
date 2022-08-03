@@ -31,6 +31,8 @@
         #define SYS_pidfd_open 434
     #elif defined(__riscv)
         #define SYS_pidfd_open 434
+    #elif defined(__s390x__)
+        #define SYS_pidfd_open 434
     #else
         #error "Unsupported architecture"
     #endif
