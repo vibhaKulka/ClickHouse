@@ -1,4 +1,5 @@
 ---
+slug: /en/development/developer-instruction
 sidebar_position: 61
 sidebar_label: Getting Started
 description: Prerequisites and an overview of how to build ClickHouse
@@ -266,6 +267,12 @@ Testing will commence as soon as ClickHouse employees label your PR with a tag �
 The system will prepare ClickHouse binary builds for your pull request individually. To retrieve these builds click the “Details” link next to “ClickHouse build check” entry in the list of checks. There you will find direct links to the built .deb packages of ClickHouse which you can deploy even on your production servers (if you have no fear).
 
 Most probably some of the builds will fail at first times. This is due to the fact that we check builds both with gcc as well as with clang, with almost all of existing warnings (always with the `-Werror` flag) enabled for clang. On that same page, you can find all of the build logs so that you do not have to build ClickHouse in all of the possible ways.
+
+## Browse ClickHouse Source Code {#browse-clickhouse-source-code}
+
+You can use the **Woboq** online code browser available [here](https://clickhouse.com/codebrowser/ClickHouse/src/index.html). It provides code navigation, semantic highlighting, search and indexing. The code snapshot is updated daily.
+
+Also, you can browse sources on [GitHub](https://github.com/ClickHouse/ClickHouse) as usual.
 
 ## Faster builds for development: Split build configuration {#split-build}
 
